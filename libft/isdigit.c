@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isalpha.c                                          :+:      :+:    :+:   */
+/*   isdigit.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eunjiko <eunjiko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/15 14:39:36 by eunjiko           #+#    #+#             */
+/*   Created: 2022/07/15 14:57:54 by eunjiko           #+#    #+#             */
 /*   Updated: 2022/07/15 15:37:13 by eunjiko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	is_alpha(char *str)
+int  isdigit(int c);
 {
-	int	idx;
-
-	idx = 0;
-	while (str[idx] != '\0')
-	{
-		if ((str[idx] >= 'a' && str[idx] <= 'z')
-			|| (str[idx] >= 'A' && str[idx] <= 'Z'))
-			idx++;
-		else
-			return (0);
-	}
-	return (1);
+	if ( c >= '0' && c <= '9')
+        return (1);
+	else
+		return (0);
 }
