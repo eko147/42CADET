@@ -6,22 +6,15 @@
 /*   By: eunjiko <eunjiko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 14:39:36 by eunjiko           #+#    #+#             */
-/*   Updated: 2022/07/15 15:37:13 by eunjiko          ###   ########.fr       */
+/*   Updated: 2022/07/18 17:37:18 by eunjiko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	is_alpha(char *str)
+int	ft_isalpha(int c)
 {
-	int	idx;
-
-	idx = 0;
-	while (str[idx] != '\0')
-	{
-		if ((str[idx] >= 'a' && str[idx] <= 'z')
-			|| (str[idx] >= 'A' && str[idx] <= 'Z'))
-			idx++;
-		else
-			return (0);
-	}
-	return (1);
+	if ((str[idx] >= 'a' && str[idx] <= 'z')
+		|| (str[idx] >= 'A' && str[idx] <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
